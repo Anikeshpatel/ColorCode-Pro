@@ -25,7 +25,7 @@ This Software For UI &amp; Web Designers
 
 ![ScreenShot](https://raw.githubusercontent.com/Anikesh1999/ColorCode-Pro/Main/Screenshot/home.png) 
 
-# Saved Your Color
+# Saved Color
 
 ![ScreenShot](https://raw.githubusercontent.com/Anikesh1999/ColorCode-Pro/Main/Screenshot/savedColor1.png)
 
