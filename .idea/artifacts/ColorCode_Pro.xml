@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="ColorCode Pro">
+    <output-path>$PROJECT_DIR$/out/artifacts/ColorCode_Pro</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="kgks ahos fdfb" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="exe" />
+        <option name="title" value="ColorCode" />
+        <option name="vendor" value="Anon.inc" />
+        <option name="version" value="2.0.0.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="ColorCode_Pro.jar">
+        <element id="module-output" name="ColorCode Pro" />
+      </element>
+      <element id="library" level="project" name="fontawesomefx-8.9" />
+    </root>
+  </artifact>
+</component>

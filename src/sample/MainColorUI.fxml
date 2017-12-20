@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane stylesheets="sample/tabStyle.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTabPane depthTest="ENABLE" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab text="Home" style="-fx-background-color: #ffa22d; -fx-border-width: 20">
+                    <content>
+                      <AnchorPane fx:id="root" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #42A5F5;">
+                           <children>
+                              <JFXColorPicker fx:id="materialCode" layoutX="463.0" layoutY="87.0" onAction="#getMaterialColor" />
+                              <ColorPicker fx:id="simpleCode" layoutX="448.0" layoutY="137.0" onAction="#getSimpleColor" />
+                              <Label layoutX="52.0" layoutY="141.0" text="Simple Color" textFill="WHITE" />
+                              <Label layoutX="52.0" layoutY="91.0" text="Material Color" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="WHITE" layoutX="161.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color Code Software">
+                                 <font>
+                                    <Font name="Watertown Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <JFXTextField fx:id="outputText" editable="false" focusColor="#0040ff" labelFloat="true" layoutX="216.0" layoutY="182.0" promptText="Copy Code From Here" style="-jfx-focus-color: blue;" unFocusColor="WHITE">
+                                 <contextMenu>
+                                    <ContextMenu>
+                                       <items>
+                                          <MenuItem fx:id="copy" mnemonicParsing="false" onAction="#copyContent" text="Copy">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../copy_icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </MenuItem>
+                                          <MenuItem fx:id="cut" mnemonicParsing="false" onAction="#cutContent" text="Cut">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../cut_icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </MenuItem>
+                                          <MenuItem fx:id="delete" mnemonicParsing="false" onAction="#clearColorCode" text="Delete">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../delete_icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </MenuItem>
+                                          <MenuItem fx:id="about" mnemonicParsing="false" onAction="#showAbout" text="About Software">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../about_icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </MenuItem>
+                                       </items>
+                                    </ContextMenu>
+                                 </contextMenu>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton buttonType="RAISED" layoutX="361.0" layoutY="271.0" onAction="#copyContent" prefHeight="38.0" prefWidth="86.0" text="Copy" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="129.0" layoutY="271.0" prefHeight="38.0" prefWidth="86.0" text="Save" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Saved Color" styleClass="saveColorTab">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXTextField alignment="CENTER" focusColor="#0040ff" layoutX="65.0" layoutY="38.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="8.0" layoutY="42.0" prefHeight="27.0" prefWidth="24.0" text="1.">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <JFXButton layoutX="264.0" layoutY="43.0" prefHeight="34.0" prefWidth="77.0" text="Copy">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </JFXButton>
+                              <Pane fx:id="pbox1" layoutX="398.0" layoutY="29.0" prefHeight="47.0" prefWidth="170.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <effect>
+                                    <DropShadow blurType="GAUSSIAN" height="33.37" offsetX="10.0" offsetY="10.0" radius="17.375" width="38.13" />
+                                 </effect>
+                              </Pane>
+                              <JFXTextField alignment="CENTER" focusColor="#0040ff" layoutX="66.0" layoutY="91.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="9.0" layoutY="95.0" prefHeight="27.0" prefWidth="24.0" text="2.">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <JFXButton layoutX="265.0" layoutY="96.0" prefHeight="34.0" prefWidth="77.0" text="Copy">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </JFXButton>
+                              <Pane fx:id="pbox2" layoutX="399.0" layoutY="84.0" prefHeight="47.0" prefWidth="170.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <effect>
+                                    <DropShadow blurType="GAUSSIAN" height="33.37" offsetX="10.0" offsetY="10.0" radius="17.375" width="38.13" />
+                                 </effect>
+                              </Pane>
+                              <JFXTextField alignment="CENTER" focusColor="#0040ff" layoutX="66.0" layoutY="148.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="7.0" layoutY="152.0" prefHeight="27.0" prefWidth="26.0" text="3.">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <JFXButton layoutX="265.0" layoutY="153.0" prefHeight="34.0" prefWidth="77.0" text="Copy">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </JFXButton>
+                              <Pane fx:id="pbox3" layoutX="399.0" layoutY="139.0" prefHeight="47.0" prefWidth="170.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <effect>
+                                    <DropShadow blurType="GAUSSIAN" height="33.37" offsetX="10.0" offsetY="10.0" radius="17.375" width="38.13" />
+                                 </effect>
+                              </Pane>
+                              <JFXTextField alignment="CENTER" focusColor="#0040ff" layoutX="67.0" layoutY="204.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="8.0" layoutY="208.0" prefHeight="27.0" prefWidth="26.0" text="4.">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <JFXButton layoutX="266.0" layoutY="209.0" prefHeight="34.0" prefWidth="77.0" text="Copy">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </JFXButton>
+                              <Pane fx:id="pbox4" layoutX="399.0" layoutY="194.0" prefHeight="47.0" prefWidth="170.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <effect>
+                                    <DropShadow blurType="GAUSSIAN" height="33.37" offsetX="10.0" offsetY="10.0" radius="17.375" width="38.13" />
+                                 </effect>
+                              </Pane>
+                              <JFXTextField alignment="CENTER" focusColor="#0040ff" layoutX="66.0" layoutY="259.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="7.0" layoutY="263.0" prefHeight="27.0" prefWidth="26.0" text="5.">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <JFXButton layoutX="265.0" layoutY="264.0" prefHeight="34.0" prefWidth="77.0" text="Copy">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </JFXButton>
+                              <Pane fx:id="pbox5" layoutX="399.0" layoutY="250.0" prefHeight="47.0" prefWidth="170.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <effect>
+                                    <DropShadow blurType="GAUSSIAN" height="33.37" offsetX="10.0" offsetY="10.0" radius="17.375" width="38.13" />
+                                 </effect>
+                              </Pane>
+                              <JFXTextField alignment="CENTER" focusColor="#0040ff" layoutX="68.0" layoutY="312.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="7.0" layoutY="316.0" prefHeight="27.0" prefWidth="26.0" text="6.">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <JFXButton layoutX="267.0" layoutY="317.0" prefHeight="34.0" prefWidth="77.0" text="Copy">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </JFXButton>
+                              <Pane fx:id="pbox6" layoutX="399.0" layoutY="304.0" prefHeight="47.0" prefWidth="170.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <effect>
+                                    <DropShadow blurType="GAUSSIAN" height="33.37" offsetX="10.0" offsetY="10.0" radius="17.375" width="38.13" />
+                                 </effect>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

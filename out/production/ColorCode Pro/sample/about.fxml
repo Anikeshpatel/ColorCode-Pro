@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="469.0" fitWidth="721.0" layoutX="-17.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../about_bg.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="-2.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed By : Anikesh Patel" textAlignment="CENTER" wrappingWidth="669.9999951124191">
+         <font>
+            <Font name="System Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="5.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ColorCode Pro v2.0" textAlignment="CENTER" wrappingWidth="659.434401512146">
+         <font>
+            <Font name="Arial" size="55.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fill="WHITE" layoutX="2.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For UI &amp; Web Designers" textAlignment="CENTER" wrappingWidth="669.9999951124191">
+         <font>
+            <Font name="Segoe UI" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="15.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powered By - Open Source Software" textAlignment="CENTER" wrappingWidth="659.4343890547752">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#bfb9b9" layoutX="2.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2017 Anon.inc All Rights Reserved" wrappingWidth="659.4343890547752">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
