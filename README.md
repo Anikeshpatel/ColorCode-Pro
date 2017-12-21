@@ -1,4 +1,4 @@
-# ColorCode Pro - Simple & Material Colors Code (Beta)
+# ColorCode Pro - Simple & Material Colors Code (Stable)
 This Software For UI &amp; Web Designers
 
 # Features : - 
@@ -23,11 +23,11 @@ This Software For UI &amp; Web Designers
 
 # Home Page 
 
-![ScreenShot](https://raw.githubusercontent.com/Anikesh1999/ColorCode-Pro/Main/Screenshot/home.png) 
+![ScreenShot](https://raw.githubusercontent.com/Anikesh1999/ColorCode-Pro/master/Screenshot/Home1.png) 
 
-# Saved Color
+# Add Your Favorite Color As per Your Projects
 
-![ScreenShot](https://raw.githubusercontent.com/Anikesh1999/ColorCode-Pro/Main/Screenshot/savedColor1.png)
+![ScreenShot](https://raw.githubusercontent.com/Anikesh1999/ColorCode-Pro/master/Screenshot/FavTab.png)
 
 # About Page
 
