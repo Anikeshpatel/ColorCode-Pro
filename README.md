@@ -12,9 +12,11 @@ This Software For UI &amp; Web Designers
 
 # Download Portable Jar File 
  click here https://goo.gl/3edtW9
+# Download Windows 64bit Executable
+click here https://github.com/Anikesh1999/ColorCode-Pro/raw/master/out/ColorCode%20Pro%20v2.exe
 
 # How To Install For Daily Usege
-1. Copy ColorCode Pro v2.0.exe Software and paste to your softwares directory for example : C:\Program Files\ColorCode\
+1. Copy ColorCode Pro v2.exe Software and paste to your softwares directory for example : C:\Program Files\ColorCode\
 2. Right Click on ColorCode v2.0.exe and Create Shortcut 
 3. Than copy shortcut and paste to C:\ProgramData\Microsoft\Windows\Start Menu\Programs
 3. Wow Your Software Is Ready To Use Now For Daily Usege
