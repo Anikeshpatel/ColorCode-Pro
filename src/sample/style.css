@@ -1,0 +1,39 @@
+*{
+    -fx-mainColor : #2A2E37;
+    -fx-secondColor : #FFFF8D;
+    -fx-textColor : white;
+    -fx-hoverText : #B2B2B2;
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+}
+.root{
+    -fx-background-color: -fx-mainColor;
+}
+.tab{
+    -fx-pref-width: 250;
+    -fx-pref-height: 35;
+}
+.tab-header-background{
+    -fx-background-color: -fx-mainColor;
+}
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 10pt;
+}
+.button:hover{
+    -fx-background-color: -fx-secondColor;
+    -fx-text-fill: -fx-mainColor;
+}
+.pane{
+    -fx-border-color: -fx-secondColor;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+.text-field{
+    -fx-text-fill:-fx-textColor;
+}
