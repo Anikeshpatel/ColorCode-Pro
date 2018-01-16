@@ -11,9 +11,9 @@ This Software For UI &amp; Web Designers
 - More Feature, More Components and More Functionality  ( Only Professional Version )
 
 # Download Portable Jar File 
- click here https://goo.gl/3edtW9
+ <a href="https://goo.gl/3edtW9">click here</a>
 # Download Windows 64bit Executable
-click here https://github.com/Anikesh1999/ColorCode-Pro/raw/master/out/ColorCode%20Pro%20v2.exe
+ <a href="https://github.com/Anikesh1999/ColorCode-Pro/raw/master/out/ColorCode%20Pro%20v2.exe">click here</a>
 
 # How To Install For Daily Usege
 1. Copy ColorCode Pro v2.exe Software and paste to your softwares directory for example : C:\Program Files\ColorCode\
