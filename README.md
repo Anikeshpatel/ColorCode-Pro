@@ -19,7 +19,7 @@ This Software For UI &amp; Web Designers
 1. Copy ColorCode Pro v2.exe Software and paste to your softwares directory for example : C:\Program Files\ColorCode\
 2. Right Click on ColorCode v2.0.exe and Create Shortcut 
 3. Than copy shortcut and paste to C:\ProgramData\Microsoft\Windows\Start Menu\Programs
-3. Wow Your Software Is Ready To Use Now For Daily Usege
+3. Wow Your Software Is Ready To Use Now For Daily Usage
 4. Happy Coding and Designing .. 
 
 
